@@ -1,0 +1,72 @@
+\relax 
+\citation{android_security,android_selinux}
+\citation{android_gki}
+\citation{ebpf_linux_doc,libbpf_doc}
+\citation{strace_doc,ftrace_doc,bpftrace_doc}
+\citation{android_perfetto,android_simpleperf}
+\citation{falco_doc,tetragon_doc,tracee_doc}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Related Work}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}eBPF Architecture}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Related Work}{1}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of our approach with existing tools}}{2}{}\protected@file@percent }
+\newlabel{tab:comparison}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Why Android Needs a Different Approach}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}System Design}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Architecture Overview}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces eBPF suite system architecture.}}{2}{}\protected@file@percent }
+\newlabel{fig:arch}{{1}{2}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Design Decisions}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Deployment: Debian Filesystem Bootstrap}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Methodology and Build Pipeline}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Tool Implementations}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Procwatch: Process Lifecycle Monitor}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Procwatch test commands used to generate lifecycle events.}}{3}{}\protected@file@percent }
+\newlabel{fig:procwatch}{{2}{3}{}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Procwatch output showing EXEC/FORK/EXIT events with PID, UID, and filename.}}{3}{}\protected@file@percent }
+\newlabel{fig:procwatch-out}{{3}{3}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Execguard: Execution Rate Monitor}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Execguard test commands used to trigger exec bursts.}}{3}{}\protected@file@percent }
+\newlabel{fig:execguard}{{4}{3}{}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Execguard output showing INFO/WARN/ALERT escalation and exec counts.}}{3}{}\protected@file@percent }
+\newlabel{fig:execguard-out}{{5}{3}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Priviwatch: Privilege Transition Detector}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Priviwatch test commands used to trigger UID transitions.}}{3}{}\protected@file@percent }
+\newlabel{fig:priviwatch}{{6}{3}{}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Priviwatch output showing UID/GID and capability changes.}}{3}{}\protected@file@percent }
+\newlabel{fig:priviwatch-out}{{7}{3}{}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Filewatch: VFS File Activity Monitor}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Filewatch test commands used to generate VFS events.}}{4}{}\protected@file@percent }
+\newlabel{fig:filewatch}{{8}{4}{}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Filewatch output showing OPEN/WRITE/RENAME/DELETE events with inode correlation.}}{4}{}\protected@file@percent }
+\newlabel{fig:filewatch-out}{{9}{4}{}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Pktrace: TC Ingress Packet Capture}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Pktrace test commands used to generate inbound traffic.}}{4}{}\protected@file@percent }
+\newlabel{fig:pktrace}{{10}{4}{}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Pktrace output showing packets with payload preview.}}{4}{}\protected@file@percent }
+\newlabel{fig:pktrace-out}{{11}{4}{}{figure.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Evaluation}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Experimental Setup}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Correctness Validation}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Performance}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Per-tool performance under synthetic load}}{4}{}\protected@file@percent }
+\newlabel{tab:perf}{{II}{4}{}{table.2}{}}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{android_security}{1}
+\bibcite{android_selinux}{2}
+\bibcite{android_gki}{3}
+\bibcite{ebpf_linux_doc}{4}
+\bibcite{libbpf_doc}{5}
+\bibcite{strace_doc}{6}
+\bibcite{ftrace_doc}{7}
+\bibcite{bpftrace_doc}{8}
+\bibcite{android_perfetto}{9}
+\bibcite{android_simpleperf}{10}
+\bibcite{falco_doc}{11}
+\bibcite{tetragon_doc}{12}
+\bibcite{tracee_doc}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion and Future Work}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{}\protected@file@percent }
+\gdef \@abspage@last{5}
