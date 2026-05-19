@@ -1,4 +1,5 @@
 # Android eBPF Utility Suite
+# Added a couple more tools, like extended pktrace to a mini-wireshark type tool, and also added another tool called camtrace for tracing camera data packets.
 
 A collection of eBPF-based monitoring tools built for an Android emulator + Debian chroot workflow. The goal of the suite is to observe security-relevant kernel activity in real time with low overhead.
 
